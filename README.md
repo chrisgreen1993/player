@@ -12,11 +12,21 @@ Implemented features:
 * Repeat
 * Seek
 
+Issues: [see here](https://github.com/chrisgreen1993/player/labels/high%20priority)
+
 ## Usage
 
 #### Note: currently only tested on OSX
 
-`npm install chrisgreen1993/player`
+`git clone git@github.com:chrisgreen1993/player.git where/to/clone`
+
+`cd where/to/clone`
+
+`npm install`
+
+Run tests:
+
+`npm test`
 
 Rebuild on changes:
 
@@ -26,6 +36,4 @@ Start app:
 
 `gulp run`
 
-Run tests:
-
-`npm test`
+Inside app, hit `F1` to reload the app and `F2` to display dev tools. (Although it should auto reload on changes anyway).
