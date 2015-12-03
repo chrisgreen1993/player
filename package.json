@@ -1,0 +1,38 @@
+{
+  "name": "player",
+  "version": "0.0.1",
+  "description": "music player",
+  "main": "index.html",
+  "author": "Chris Green",
+  "license": "ISC",
+  "dependencies": {
+    "dexie": "^1.1.0",
+    "flux": "^2.0.1",
+    "keymirror": "^0.1.1",
+    "lodash": "^3.10.1",
+    "musicmetadata": "^2.0.0",
+    "object-assign": "^4.0.1",
+    "react": "^0.13.1",
+    "walk": "^2.3.9"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-react": "^3.0.1",
+    "mocha": "^2.3.2",
+    "mock-fs": "^3.2.0",
+    "node-webkit-builder": "^1.0.11"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "no-edit-menu": false,
+  "window": {
+    "toolbar": false,
+    "width": 800,
+    "height": 600,
+    "min_width": 800,
+    "min_height": 600
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Player</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/holder.min.js"></script>
+</head>
+
+<body>
+  <div id="player"></div>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script>
+    /* live reload changes */
+    var gulp = require('gulp');
+    gulp.task('reload', function() {
+      if (location) {
+        require('nw.gui').Window.get().reloadDev();
+      }
+    });
+    gulp.watch('../build/package.json', ['reload']);
+    /* Dev shortcuts */
+    var gui = require('nw.gui');
+    var win = gui.Window.get();
+    window.addEventListener('keydown', function() {
+      if (event.keyIdentifier === 'F1') {
+        win.reloadDev();
+      }
+      if (event.keyIdentifier === 'F2') {
+        win.showDevTools();
+      }
+    })
+  </script>
+</body>
+
+</html>
